@@ -28,9 +28,9 @@ export default defineComponent({
     UiLoader,
   },
   setup() {
-    const controllerStore = useControllerStore();
     const { getControllerMessages } = useControllerMessages();
     getControllerMessages();
+    const controllerStore = useControllerStore();
 
     const { controllerParams, isLoading } = storeToRefs(controllerStore);
 
